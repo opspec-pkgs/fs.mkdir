@@ -3,7 +3,7 @@ description: creates a directory
 outputs:
   dir:
     dir:
-      description: the cloned git repo
+      description: the created dir
 run:
   container:
     cmd: [ sh, -ce, mkdir -p /dir ]
