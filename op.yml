@@ -1,0 +1,12 @@
+name: github.com/opspec-pkgs/fs.mkdir
+description: creates a directory
+outputs:
+  dir:
+    dir:
+      description: the cloned git repo
+run:
+  container:
+    cmd: [ sh, -ce, mkdir -p /dir ]
+    dirs:
+      /dir: dir
+    image: { ref: 'alpine:3.6' }
