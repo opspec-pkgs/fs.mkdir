@@ -8,5 +8,5 @@ run:
   container:
     cmd: [ sh, -ce, mkdir -p /dir ]
     dirs:
-      /dir: dir
+      /dir: $(dir)
     image: { ref: 'alpine:3.6' }
