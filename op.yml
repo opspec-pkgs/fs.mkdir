@@ -4,6 +4,7 @@ outputs:
   dir:
     dir:
       description: the created dir
+version: 1.1.0
 run:
   container:
     cmd: [ sh, -ce, mkdir -p /dir ]
